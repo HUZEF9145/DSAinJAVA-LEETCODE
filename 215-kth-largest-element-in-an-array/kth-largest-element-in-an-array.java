@@ -5,13 +5,20 @@ class Solution {
         
          int i =0 ;
          
-        while(i<=nums.length -1 ){
+        // while(i<=nums.length -1 ){
             
-            pq.offer(nums[i]);
-            if(pq.size()>k) pq.poll();
-            i++;
+        //     pq.offer(nums[i]);
+        //     if(pq.size()>k) pq.poll();
+        //     i++;
         
-        }
+        // }
+
+        for (int num : nums) {
+            pq.offer(num);
+              if (pq.size() > k) {
+                  pq.poll();
+                }
+}
    
 
       return pq.peek();  
