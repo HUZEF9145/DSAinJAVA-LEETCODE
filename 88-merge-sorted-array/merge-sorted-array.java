@@ -24,7 +24,11 @@ class Solution {
                 j--;
                 k--;
             }
-            
+            while(i>=0){
+                nums1[k]=nums1[i];
+                i--;
+                k--;
+            }
         }
     }
         
