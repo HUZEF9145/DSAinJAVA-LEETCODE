@@ -7,8 +7,6 @@ class Solution {
         StringBuilder sb = new StringBuilder();
 
         while (j >= 0) {
-
-            // Skip spaces
             while (j >= 0 && s.charAt(j) == ' ') {
                 j--;
             }
@@ -18,12 +16,10 @@ class Solution {
 
             int i = j;
 
-            // Find beginning of word
             while (i >= 0 && s.charAt(i) != ' ') {
                 i--;
             }
-
-            // Add word
+            
             sb.append(s.substring(i + 1, j + 1));
             sb.append(" ");
 
