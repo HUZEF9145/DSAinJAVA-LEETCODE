@@ -11,8 +11,8 @@ class Solution {
                 j--;
             }
 
-            if (j < 0)
-                break;
+            // if (j < 0)
+            //     break;
 
             int i = j;
 
